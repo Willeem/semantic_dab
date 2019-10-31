@@ -1,0 +1,128 @@
+<http://dbpedia.org/resource/Albert_Speer> <http://xmlns.com/foaf/0.1/name> "Albert Speer"@nl .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/subtitle> "Speer op het Proces van Neurenberg (1945-1946)".
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/birthDate> "1905-03-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/deathDate> "1981-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Mannheim> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/London> .
+<http://dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/profession> <http://dbpedia.org/resource/Nazi_Party> .
+<http://dbpedia.org/resource/Alan_Turing> <http://xmlns.com/foaf/0.1/name> "Alan Turing"@nl .
+<http://dbpedia.org/resource/Alan_Turing> <http://dbpedia.org/ontology/longName> "Alan Mathison Turing"@nl .
+<http://dbpedia.org/resource/Alan_Turing> <http://dbpedia.org/ontology/birthDate> "1912-06-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Alan_Turing> <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/London> .
+<http://dbpedia.org/resource/Alan_Turing> <http://dbpedia.org/ontology/deathDate> "1954-06-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Alan_Turing> <http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Wilmslow> .
+<http://dbpedia.org/resource/Alan_Turing> <http://dbpedia.org/ontology/profession> <http://dbpedia.org/resource/Mathematics> .
+<http://dbpedia.org/resource/Anthony_Fokker> <http://xmlns.com/foaf/0.1/name> "Anthony Fokker"@nl .
+<http://dbpedia.org/resource/Anthony_Fokker> <http://dbpedia.org/ontology/longName> "Antonij Herman Gerard Fokker"@nl .
+<http://dbpedia.org/resource/Anthony_Fokker> <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Kediri,_East_Java> .
+<http://dbpedia.org/resource/Anthony_Fokker> <http://dbpedia.org/ontology/birthDate> "1890-04-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Anthony_Fokker> <http://dbpedia.org/ontology/deathDate> "1939-12-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Anthony_Fokker> <http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/New_York_City> .
+<http://dbpedia.org/resource/Anthony_Fokker> <http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/New_York> .
+<http://dbpedia.org/resource/Anthony_Fokker> <http://dbpedia.org/ontology/citizenship> <http://dbpedia.org/resource/Dutch_language> .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/name> "Alpen"@nl .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/France> .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Monaco> .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Italy> .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Switzerland> .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Austria> .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Slovenia> .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Germany> .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/elevation> "4811.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/picture> <http://dbpedia.org/resource/Mont_Blanc> .
+<http://dbpedia.org/resource/Alps> <http://dbpedia.org/ontology/pictureDescription> <http://dbpedia.org/resource/Mont_Blanc> .
+<http://dbpedia.org/resource/Alps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/gml/_Feature> .
+<http://dbpedia.org/resource/Alps> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "46.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://dbpedia.org/resource/Alps> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "10.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://dbpedia.org/resource/Alps> <http://www.georss.org/georss/point> "46.0 10.0".
+<http://dbpedia.org/resource/Albert_Plesman> <http://xmlns.com/foaf/0.1/name> "Albert Plesman"@nl .
+<http://dbpedia.org/resource/Albert_Plesman> <http://dbpedia.org/ontology/longName> "Albert Plesman"@nl .
+<http://dbpedia.org/resource/Albert_Plesman> <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/The_Hague> .
+<http://dbpedia.org/resource/Albert_Plesman> <http://dbpedia.org/ontology/birthDate> "1889-09-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Albert_Plesman> <http://dbpedia.org/ontology/deathDate> "1953-12-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Albert_Plesman> <http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/The_Hague> .
+<http://dbpedia.org/resource/Albert_Plesman> <http://dbpedia.org/ontology/webcast> <http://dbpedia.org/resource/Aviation> .
+<http://dbpedia.org/resource/Albert_Plesman> <http://dbpedia.org/ontology/relatedFunctions> <http://dbpedia.org/resource/KLM> .
+<http://dbpedia.org/resource/Amstel> <http://dbpedia.org/ontology/name> "Amstel"@nl .
+<http://dbpedia.org/resource/Amstel> <http://dbpedia.org/ontology/riverMouth> <http://dbpedia.org/resource/Amsterdam> .
+<http://dbpedia.org/resource/Amstel> <http://dbpedia.org/ontology/subtitle> "Luchtfoto Amstel bij Amsterdam, gezien van zuid naar noord".
+<http://dbpedia.org/resource/Amstel> <http://dbpedia.org/ontology/subtitle> "Oostermeer aan de Amstel bij Amstelveen".
+<http://dbpedia.org/resource/Aristotle> <http://xmlns.com/foaf/0.1/name> "Aristoteles"@nl .
+<http://dbpedia.org/resource/Aristotle> <http://xmlns.com/foaf/0.1/name> "\u1F08\u03C1\u03B9\u03C3\u03C4\u03BF\u03C4\u03AD\u03BB\u03B7\u03C2"@nl .
+<http://dbpedia.org/resource/Aristotle> <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Stagira_(ancient_city)> .
+<http://dbpedia.org/resource/Aristotle> <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/384_BC> .
+<http://dbpedia.org/resource/Aristotle> <http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Chalcis> .
+<http://dbpedia.org/resource/Aristotle> <http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/322_BC> .
+<http://dbpedia.org/resource/Aristotle> <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Macedonia_(ancient_kingdom)> .
+<http://dbpedia.org/resource/Aristotle> <http://dbpedia.org/ontology/influencedBy> <http://dbpedia.org/resource/Socrates> .
+<http://dbpedia.org/resource/Aristotle> <http://dbpedia.org/ontology/influencedBy> <http://dbpedia.org/resource/Plato> .
+<http://dbpedia.org/resource/Aristotle> <http://dbpedia.org/ontology/longName> "Aristoteles"@nl .
+<http://dbpedia.org/resource/Atlantic_Ocean> <http://xmlns.com/foaf/0.1/name> "Atlantische Oceaan"@nl .
+<http://dbpedia.org/resource/Atlantic_Ocean> <http://dbpedia.org/ontology/locatedInArea> <http://dbpedia.org/resource/Americas> .
+<http://dbpedia.org/resource/Atlantic_Ocean> <http://dbpedia.org/ontology/locatedInArea> <http://dbpedia.org/resource/Africa> .
+<http://dbpedia.org/resource/Atlantic_Ocean> <http://dbpedia.org/ontology/subtitle> "Reli\u00EBfkaart van de Atlantische Oceaan".
+<http://dbpedia.org/resource/Atlantic_Ocean> <http://dbpedia.org/ontology/maximumDepth> "8605.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Atlantic_Ocean> <http://dbpedia.org/ontology/depth> "3926.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Atlantic_Ocean> <http://dbpedia.org/ontology/areaTotal> "8.2362E13"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Netherlands> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://xmlns.com/foaf/0.1/name> "Ad Melkert"@nl .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/longName> "Adrianus Petrus Wilhelmus Melkert"@nl .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/birthDate> "1956-02-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/party> <http://dbpedia.org/resource/Political_Party_of_Radicals> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/party> <http://dbpedia.org/resource/Labour_Party_(Netherlands)> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/title> "drs."@nl .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/personFunction> <http://dbpedia.org/resource/House_of_Representatives_(Netherlands)> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsStartYear> "1986"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsEndYear> "1994"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsStartYear> "1994"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsEndYear> "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/personFunction> <http://dbpedia.org/resource/House_of_Representatives_(Netherlands)> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsStartYear> "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsEndYear> "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/personFunction> <http://dbpedia.org/resource/Parliamentary_group_leader> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/personFunction> <http://dbpedia.org/resource/Liquidator_(law)> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsStartYear> "2002"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsEndYear> "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/personFunction> <http://dbpedia.org/resource/United_Nations_Development_Programme> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsStartYear> "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsEndYear> "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/personFunction> <http://dbpedia.org/resource/United_Nations> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsStartYear> "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/activeYearsEndYear> "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://xmlns.com/foaf/0.1/homepage> <http://www.parlement.com/9291000/bio/02807> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/predecessor> <http://dbpedia.org/resource/Bert_de_Vries> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/successor> <http://dbpedia.org/resource/Klaas_de_Vries_(Labour_Party)> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/predecessor> <http://dbpedia.org/resource/Jacques_Wallage> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/successor> <http://dbpedia.org/resource/Jeltje_van_Nieuwenhoven> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/predecessor> <http://dbpedia.org/resource/Wim_Kok> .
+<http://dbpedia.org/resource/Ad_Melkert> <http://dbpedia.org/ontology/successor> <http://dbpedia.org/resource/Wouter_Bos> .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/name> "\u062F \u0627\u0641\u063A\u0627\u0646\u0633\u062A\u0627\u0646 \u0627\u0633\u0644\u0627\u0645\u06CC \u062F\u0648\u0644\u062A"@nl .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/name> "(Da Afghanistan Islami Dawlat)"@nl .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/name> "(Islamitische Republiek van Afghanistan)"@nl .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/flag> "120px|Vlag van Afghanistan".
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/flag> "(Details)".
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/logo> "120px|Wapen van Afghanistan".
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/logo> "(Details)".
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/language> <http://dbpedia.org/resource/Pashto_language> .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/language> <http://dbpedia.org/resource/Persian_language> .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/capital> <http://dbpedia.org/resource/Kabul> .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/religion> <http://dbpedia.org/resource/Sunni_Islam> .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/religion> <http://dbpedia.org/resource/Shia_Islam> .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/governmentType> <http://dbpedia.org/resource/Islamic_republic> .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/currency> <http://dbpedia.org/resource/Afghan_afghani> .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/timeZone> <http://dbpedia.org/resource/UTC+04:30> .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/anthem> <http://dbpedia.org/resource/Afghan_National_Anthem> .
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/code> "AFG".
+<http://dbpedia.org/resource/Afghanistan> <http://dbpedia.org/ontology/areaCode> "93".
+<http://dbpedia.org/resource/Apterygota> <http://dbpedia.org/ontology/name> "Apterygota"@nl .
+<http://dbpedia.org/resource/Apterygota> <http://dbpedia.org/ontology/scientificName> "Apterygota".
+<http://dbpedia.org/resource/Apterygota> <http://dbpedia.org/ontology/pictureDescription> <http://dbpedia.org/resource/Silverfish> .
+<http://dbpedia.org/resource/Apterygota> <http://dbpedia.org/ontology/picturesCommonsCategory> "Category:Apterygota".
+<http://dbpedia.org/resource/Antwerp> <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Belgium> .
+<http://dbpedia.org/resource/Antwerp> <http://dbpedia.org/ontology/municipalityType> "Stad".
+<http://dbpedia.org/resource/Antwerp> <http://dbpedia.org/ontology/subMunicipalityType> "District".
+<http://dbpedia.org/resource/Antwerp> <http://dbpedia.org/ontology/name> "Antwerpen"@nl .
+<http://dbpedia.org/resource/Antwerp> <http://dbpedia.org/ontology/governingBody> <http://dbpedia.org/resource/New_Flemish_Alliance> .
+<http://dbpedia.org/resource/Antwerp> <http://dbpedia.org/ontology/governingBody> <http://dbpedia.org/resource/Christen-Democratisch_en_Vlaams> .
+<http://dbpedia.org/resource/Antwerp> <http://dbpedia.org/ontology/governingBody> <http://dbpedia.org/resource/Open_Vlaamse_Liberalen_en_Democraten> .
+<http://dbpedia.org/resource/Antwerp> <http://dbpedia.org/ontology/borough> <http://dbpedia.org/resource/Antwerp_(distr
