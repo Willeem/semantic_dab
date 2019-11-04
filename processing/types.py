@@ -1,7 +1,14 @@
 from tqdm import tqdm
+import os
 import json
 
 def main():
+    if not os.path.isdir("../types"):
+        try:
+            os.mkdir("../types")
+        except OSError:
+            print("Creation of the directory ../types failed, please try again!")
+            exit()
     d = {}
     with open("../data/instance_types_en.nt") as f:
         for line in tqdm(f):
