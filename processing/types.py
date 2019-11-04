@@ -2,6 +2,7 @@ from tqdm import tqdm
 import os
 import json
 
+
 def main():
     if not os.path.isdir("../types"):
         try:
@@ -15,7 +16,7 @@ def main():
             if line[0] != "#":
                 l = line.split("/")
                 type = l[-1][:-4]
-                if type.isalpha() and l[4].split(">")[0].isalpha():
+                if type.isalpha() and l[4].split(">")[0][0].isalpha():
                     if type in d:
                         d[type].append(line.split()[0])
                     else:
