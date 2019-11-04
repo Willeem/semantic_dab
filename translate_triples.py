@@ -1,5 +1,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 import sys, json
+from collections import defaultdict 
+
 
 def main(argv):
     if len(argv) > 1:
@@ -13,7 +15,7 @@ def main(argv):
         to_translate = json.load(js)
 
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
-    output_dict = {}
+    output_dict = defaultdict(list)
     print(len(to_translate))
     for triple in to_translate:
         for string in to_translate[triple]:
@@ -49,16 +51,19 @@ def main(argv):
                 if result['label']['xml:lang'] == 'nl':
                     first_value = result["label"]["value"]
             if first_value != "":
-                second_string =  """
-                        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                        SELECT ?label
-                        WHERE {""" + second + """ rdfs:label ?label .}
-                    """
-                sparql.setQuery(second_string)
-                results = sparql.query().convert()
-                for result in results["results"]["bindings"]:
-                    if result['label']['xml:lang'] == 'nl':
-                        second_value = result["label"]["value"]
+                if second.split('/'[-1]) != "mainInterest":
+                    second_string =  """
+                            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                            SELECT ?label
+                            WHERE {""" + second + """ rdfs:label ?label .}
+                        """
+                    sparql.setQuery(second_string)
+                    results = sparql.query().convert()
+                    for result in results["results"]["bindings"]:
+                        if result['label']['xml:lang'] == 'nl':
+                            second_value = result["label"]["value"]
+                else:
+                    second_value == "Vakgebied"
                 if second_value != "":
                     if third_query == True:
                         third_string =  """
@@ -66,17 +71,29 @@ def main(argv):
                             SELECT ?label
                             WHERE {""" + third + """ rdfs:label ?label .}
                         """
-                        sparql.setQuery(third_string)          
+                        sparql.setQuery(third_string)
                         results = sparql.query().convert()
                         for result in results["results"]["bindings"]:
                             if result['label']['xml:lang'] == 'nl':
                                 third_value = result["label"]["value"]
-                if third_value != "":
-                    output_dict[first_value] = str(second_value) + " " + str(third_value)
-                else:
-                    print(third)
-
-    print(len(output_dict))
+                        if third_value != "":
+                            continue
+                        else:
+                            third_string =  """
+                            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                            SELECT ?same
+                            WHERE {""" + third + """ owl:sameAs ?same .}
+                            """
+                            sparql.setQuery(third_string)          
+                            results = sparql.query().convert()
+                            for result in results["results"]["bindings"]:
+                                if result['same']['value'].split('/')[2][:2] == "nl":
+                                    third_value = result['same']['value'].split('/')[-1]
+                                    print(str(second_value) + " " + str(third_value))       
+                    if third_value != "":                     
+                        output_dict[first_value].append((str(second_value),str(third_value)))
+                                                
+    print(output_dict)
     with open("output_triples/triples_nl_%s.json" % cat , 'w') as js:
         json.dump(output_dict,js)
 

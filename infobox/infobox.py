@@ -2,6 +2,7 @@
 
 from flask import Flask, render_template, request
 import os, json
+from collections import defaultdict
 app = Flask(__name__)
 
 # Hier moet de datafile geopend worden
@@ -25,12 +26,12 @@ def form():
 @app.route("/", methods=['POST'])  # haal input op en laat de bijbehorende infobox zien
 def infobox():
     entity = request.form['entity']
-    value_dict = {}
+    value_dict = defaultdict()
     print(entities[entity])
     for item in entities[entity]:
-        item = item.split()
-        value_dict[item[1]] = item[2]
-    print(value_dict)
+        print(item[1].strip("'").strip('"').encode('utf-8'))
+        value_dict[item[0]] = item[1].strip("'").encode('utf-8')
+        print(value_dict)
     return render_template("infobox.html", value_dict = value_dict, entity=entity)
 
 
