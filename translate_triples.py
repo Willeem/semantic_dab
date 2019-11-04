@@ -89,8 +89,8 @@ def main(argv):
                                     print(str(second_value) + " " + str(third_value))       
                     if third_value != "":                     
                         output_dict[first_value].append((str(second_value),str(third_value)))
-        if string in old[triple]:
-            old_dict[first_value].append((str(second_value),str(third_value)))
+                if string in old[triple]:
+                    old_dict[first_value].append((str(second_value),str(third_value)))
 
     for key in output_dict:
         for line in old_dict[key]:

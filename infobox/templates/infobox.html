@@ -7,13 +7,31 @@
 </head>
 <body>
     <a href="{{ url_for('form') }}">Ga terug</a>
-    <h1>Aanschouw deze prachtige infobox:</h1>
+    <h1>Old infobox:</h1>
+
+    <div class="infobox_old">
+    <table class="table.wikitable">
+      <tr>
+        <th style="text-align: center;" colspan="2">{{ entity }}</th>
+      </tr>
+      {% for key,value in old_dict.items() %}
+      <tr>
+        <th>{{ key }}</th>
+        <td>{{ value.decode('utf-8') }}</td>
+      </tr>
+     {% endfor %}
+
+    </table>
+  </div>
+
+  <h1>New infobox:</h1>
+  
     <div class="infobox">
     <table class="table.wikitable">
       <tr>
         <th style="text-align: center;" colspan="2">{{ entity }}</th>
       </tr>
-      {% for key,value in value_dict.items() %}
+      {% for key,value in new_dict.items() %}
       <tr>
         <th>{{ key }}</th>
         <td>{{ value.decode('utf-8') }}</td>

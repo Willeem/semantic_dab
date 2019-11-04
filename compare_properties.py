@@ -23,8 +23,12 @@ def main(argv):
     similar_keys = {k for k in g_dict if k in h_dict}
 
     output_dict = defaultdict(list)
+    old_dict = defaultdict(list)
     for key in similar_keys:
         for string in h_dict[key]:
+            print(string)
+            print(key)
+            old_dict[key].append(string)
             output_dict[key].append(string)
         for string in g_dict[key]:
             if string not in h_dict[key] and "@en" not in string:
@@ -32,8 +36,8 @@ def main(argv):
     with open("new_triples/new_property_nl_%s.json" %cat, 'w') as js:
         json.dump(output_dict, js)
 
-    with open("new_triples/new_property_nl_%s_old.json" %cat, 'w') as js:
-        json.dump(h_dict, js)
+    with open("new_triples/new_property_nl_%s_old.json" %cat, 'w') as sd:
+        json.dump(old_dict, sd)
     print("%s done" % cat)
 
 

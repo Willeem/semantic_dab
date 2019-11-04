@@ -9,14 +9,19 @@ app = Flask(__name__)
 # Hier moet een dictionary gemaakt worden met entity als key en een lijst met tuples (property, value) als value
 # Voorbeeld:
 
-entities = {}
+new_entities, old_entities = {}, {}
 BASE_DIR = os.getcwd()
 abs_path = BASE_DIR + '/output_triples/'
 
 for filename in os.listdir(abs_path): #laad alle files in de nieuwe triples map
     file_to_load = abs_path + filename
-    a = json.load(open(file_to_load))
-    entities.update(a) # en voeg ze toe aan 1 huge dictionary
+    if 'old' in file_to_load:
+        a = json.load(open(file_to_load))
+        old_entities.update(a) # en voeg ze toe aan 1 huge dictionary
+    else:
+        b = json.load(open(file_to_load))
+        new_entities.update(b) # en voeg ze toe aan 1 huge dictionary
+        
 
 @app.route("/")  # krijg input van de user via een form
 def form():
@@ -26,13 +31,18 @@ def form():
 @app.route("/", methods=['POST'])  # haal input op en laat de bijbehorende infobox zien
 def infobox():
     entity = request.form['entity']
-    value_dict = defaultdict()
-    print(entities[entity])
-    for item in entities[entity]:
+    new_dict = defaultdict()
+    old_dict = defaultdict()
+    print(new_entities[entity])
+    for item in new_entities[entity]:
         print(item[1].strip("'").strip('"').encode('utf-8'))
-        value_dict[item[0]] = item[1].strip("'").encode('utf-8')
-        print(value_dict)
-    return render_template("infobox.html", value_dict = value_dict, entity=entity)
+        new_dict[item[0]] = item[1].strip("'").encode('utf-8')
+        print(new_dict)
+    for item in old_entities[entity]:
+        print(item[1].strip("'").strip('"').encode('utf-8'))
+        old_dict[item[0]] = item[1].strip("'").encode('utf-8')
+        print(old_dict)
+    return render_template("infobox.html", new_dict = new_dict, old_dict = old_dict, entity=entity)
 
 
 if __name__ == "__main__":

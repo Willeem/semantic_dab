@@ -345,6 +345,113 @@ th.navbox-group,
 }
 
 /* Infobox template style */
+.infobox_old {
+	border: 1px solid #a2a9b1;
+	border-spacing: 3px;
+	background-color: #f8f9fa;
+	color: black;
+	/* @noflip */
+	margin: 0.5em 0 0.5em 1em;
+	padding: 0.2em;
+	/* @noflip */
+	float: left;
+	/* @noflip */
+	clear: right;
+	font-size: 88%;
+	line-height: 1.5em;
+}
+.infobox_old caption {
+	font-size: 125%;
+	font-weight: bold;
+	padding: 0.2em;
+	text-align: center;
+}
+.infobox_old td,
+.infobox_old th {
+	vertical-align: top;
+	/* @noflip */
+	text-align: left;
+}
+.infobox_old.bordered {
+	border-collapse: collapse;
+}
+.infobox_old.bordered td,
+.infobox_old.bordered th {
+	border: 1px solid #a2a9b1;
+}
+.infobox_old.bordered .borderless td,
+.infobox_old.bordered .borderless th {
+	border: 0;
+}
+
+.infobox_old.sisterproject {
+	width: 20em;
+	font-size: 90%;
+}
+
+.infobox_old.standard-talk {
+	border: 1px solid #c0c090;
+	background-color: #f8eaba;
+}
+.infobox_old.standard-talk.bordered td,
+.infobox_old.standard-talk.bordered th {
+	border: 1px solid #c0c090;
+}
+
+/* styles for bordered infobox_old with merged rows */
+.infobox_old.bordered .mergedtoprow td,
+.infobox_old.bordered .mergedtoprow th {
+	border: 0;
+	border-top: 1px solid #a2a9b1;
+	/* @noflip */
+	border-right: 1px solid #a2a9b1;
+}
+
+.infobox_old.bordered .mergedrow td,
+.infobox_old.bordered .mergedrow th {
+	border: 0;
+	/* @noflip */
+	border-right: 1px solid #a2a9b1;
+}
+
+/* Styles for geography infobox_oldes, eg countries,
+   country subdivisions, cities, etc.            */
+.infobox_old.geography {
+	border-collapse: collapse;
+	line-height: 1.2em;
+	font-size: 90%;
+}
+
+.infobox_old.geography  td,
+.infobox_old.geography  th {
+	border-top: 1px solid #a2a9b1;
+	padding: 0.4em 0.6em 0.4em 0.6em;
+}
+.infobox_old.geography .mergedtoprow td,
+.infobox_old.geography .mergedtoprow th {
+	border-top: 1px solid #a2a9b1;
+	padding: 0.4em 0.6em 0.2em 0.6em;
+}
+
+.infobox_old.geography .mergedrow td,
+.infobox_old.geography .mergedrow th {
+	border: 0;
+	padding: 0 0.6em 0.2em 0.6em;
+}
+
+.infobox_old.geography .mergedbottomrow td,
+.infobox_old.geography .mergedbottomrow th {
+	border-top: 0;
+	border-bottom: 1px solid #a2a9b1;
+	padding: 0 0.6em 0.4em 0.6em;
+}
+
+.infobox_old.geography .maptable td,
+.infobox_old.geography .maptable th {
+	border: 0;
+	padding: 0;
+}
+
 .infobox {
 	border: 1px solid #a2a9b1;
 	border-spacing: 3px;
