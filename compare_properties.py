@@ -1,7 +1,7 @@
-import rdflib 
-from collections import defaultdict 
+from collections import defaultdict
 import json
 import sys 
+
 
 def main(argv):
     if len(argv) > 1:
@@ -32,8 +32,11 @@ def main(argv):
                 output_dict[string.split()[0]].append(string)
     print(len(output_dict))
     with open("new_triples/new_property_nl_%s.json" %cat, 'w') as js:
-        json.dump(output_dict,js)
-    print("%s done" %cat)
+        json.dump(output_dict, js)
+    print("%s done" % cat)
+
+
+
 
 if __name__ == '__main__':
     main(sys.argv)
