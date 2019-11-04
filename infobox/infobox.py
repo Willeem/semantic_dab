@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 entities = {}
 BASE_DIR = os.getcwd()
-abs_path = BASE_DIR + '/new_triples/'
+abs_path = BASE_DIR + '/output_triples/'
 
 for filename in os.listdir(abs_path): #laad alle files in de nieuwe triples map
     file_to_load = abs_path + filename
@@ -26,8 +26,7 @@ def form():
 def infobox():
     entity = request.form['entity']
     value_dict = {}
-    entity = "<http://dbpedia.org/resource/Zhuangzi>"
-
+    print(entities[entity])
     for item in entities[entity]:
         item = item.split()
         value_dict[item[1]] = item[2]
