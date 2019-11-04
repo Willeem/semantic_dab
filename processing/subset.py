@@ -23,9 +23,12 @@ def main(argv):
     for char in sorted(d):
         print(char)
         chardict = json.load(open("../properties/props_en_%s.json" % char))
-        for ent in d[char]:
-            for line in chardict[ent]:
-                out.write(line)
+        try:
+            for ent in d[char]:
+                for line in chardict[ent]:
+                    out.write(line)
+        except KeyError:
+            pass
     out.close()
 
     nl_dict = json.load(open("../types/types_nl.json"))
@@ -42,9 +45,12 @@ def main(argv):
     for char in sorted(d):
         print(char)
         chardict = json.load(open("../properties/props_nl_%s.json" % char))
-        for ent in d[char]:
-            for line in chardict[ent]:
-                out.write(line)
+        try:
+            for ent in d[char]:
+                for line in chardict[ent]:
+                    out.write(line)
+        except KeyError:
+            pass
     out.close()
 
 

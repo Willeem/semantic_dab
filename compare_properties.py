@@ -31,6 +31,9 @@ def main(argv):
                 output_dict[key].append(string)
     with open("new_triples/new_property_nl_%s.json" %cat, 'w') as js:
         json.dump(output_dict, js)
+
+    with open("new_triples/new_property_nl_%s_old.json" %cat, 'w') as js:
+        json.dump(h_dict, js)
     print("%s done" % cat)
 
 
