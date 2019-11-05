@@ -1,5 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 import sys, json
+from tqdm import tqdm
 from collections import defaultdict 
 
 
@@ -20,7 +21,7 @@ def main(argv):
     output_dict = defaultdict(list)
     old_dict = defaultdict(list)
     print(len(to_translate))
-    for triple in to_translate:
+    for triple in tqdm(to_translate):
         for string in to_translate[triple]:
             third_query = False
             first_value = ""
@@ -75,7 +76,7 @@ def main(argv):
                             if result['label']['xml:lang'] == 'nl':
                                 third_value = result["label"]["value"]
                         if third_value != "":
-                            continue
+                            pass
                         else:
                             third_string =  """
                             PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -90,20 +91,14 @@ def main(argv):
                                     print(str(second_value) + " " + str(third_value))       
                     if third_value != "":                     
                         output_dict[first_value].append((str(second_value),str(third_value)))
-                if string in old[triple]:
-                    old_dict[first_value].append((str(second_value),str(third_value)))
-
-    for key in output_dict:
-        for line in old_dict[key]:
-            print(line)
-        for line in output_dict[key]:
-            print(line)
+            if string in old[triple]:
+                old_dict[first_value].append((str(second_value),str(third_value)))
 
 
-    with open("output_triples/triples_nl_%s.json" % cat , 'w') as js:
+    with open("infobox/output_triples/triples_nl_%s.json" % cat , 'w') as js:
         json.dump(output_dict, js)
 
-    with open("output_triples/triples_nl_%s_old.json" % cat , 'w') as js:
+    with open("infobox/output_triples/triples_nl_%s_old.json" % cat , 'w') as js:
         json.dump(old_dict, js)
 
 
