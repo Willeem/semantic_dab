@@ -35,13 +35,24 @@ def infobox():
     old_dict = defaultdict()
     print(new_entities[entity])
     for item in new_entities[entity]:
-        print(item[1].strip("'").strip('"').encode('utf-8'))
-        new_dict[item[0]] = item[1].strip("'").encode('utf-8')
-        print(new_dict)
+        if "^^" in item[1]:
+            value = item[1].split("^^")[0]
+        elif "@" in item[1]:
+            value = item[1].split("@")[0]
+        else:
+            value = item[1]
+        #print(item[1].strip("'").strip('"').encode('utf-8'))
+        new_dict[item[0]] = value.strip("'").strip('"').encode('utf-8')
+        #print(new_dict)
     for item in old_entities[entity]:
-        print(item[1].strip("'").strip('"').encode('utf-8'))
-        old_dict[item[0]] = item[1].strip("'").encode('utf-8')
-        print(old_dict)
+        if "^^" in item[1]:
+            value = item[1].split("^^")[0]
+        elif "@" in item[1]:
+            value = item[1].split("@")[0]
+        else:
+            value = item[1]
+        #print(item[1].strip("'").strip('"').encode('utf-8'))
+        old_dict[item[0]] = value.strip("'").strip('"').encode('utf-8')
     return render_template("infobox.html", new_dict = new_dict, old_dict = old_dict, entity=entity)
 
 
