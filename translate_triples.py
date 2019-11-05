@@ -48,7 +48,7 @@ def main(argv):
                 if result['label']['xml:lang'] == 'nl':
                     first_value = result["label"]["value"]
             if first_value != "":
-                if second.split('/'[-1]) != "mainInterest":
+                if second.split('/')[-1] != "mainInterest>":
                     second_string =  """
                             PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                             SELECT ?label
@@ -61,6 +61,7 @@ def main(argv):
                             second_value = result["label"]["value"]
                 else:
                     second_value = "Vakgebied"
+                
                 if second_value != "":
                     if third_query == True:
                         third_string =  """
