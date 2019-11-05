@@ -93,12 +93,6 @@ def main(argv):
                 if string in old[triple]:
                     old_dict[first_value].append((str(second_value),str(third_value)))
 
-    for key in output_dict:
-        for line in old_dict[key]:
-            print(line)
-        for line in output_dict[key]:
-            print(line)
-
 
     with open("output_triples/triples_nl_%s.json" % cat , 'w') as js:
         json.dump(output_dict, js)
