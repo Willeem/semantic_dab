@@ -1,4 +1,4 @@
-# Eindproject Semantic Web
+# Final project Semantic Web
 Martijn Baas, Willem Datema, Iris Schepers, Elvira Slaghekke 
 
 ## Packages
