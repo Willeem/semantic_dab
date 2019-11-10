@@ -19,12 +19,12 @@ To recreate our experiment please download the English and Dutch types and prope
 
 After downloading the data run the scripts in the following order:
 
-- preprocess_types.py 
-- properties.py 
-- subset.py [category]
-- compare_properties.py [category]
-- translate_triples.py [category]
-- infobox.py 
+- ./processing/preprocess_types.py 
+- ./processing/properties.py 
+- ./processing/subset.py [category]
+- ./compare_properties.py [category]
+- ./translate_triples.py [category]
+- ./infobox/infobox.py 
 
 To recreate the results of the paper and the presentation, category should be 'philosopher'. Note: Running properties.py takes a lot of time, up to half an hour. The rest of the scripts are fairly quick to run. To view the infoboxes, the names should be spelled exactly like on DBpedia.
 
