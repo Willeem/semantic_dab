@@ -8,7 +8,16 @@ The necessary packages can be installed via running:
 pip install -r requirements.txt 
 ```
 ## Explanation
-To recreate our experiment please download the English and Dutch types and properties from https://wiki.dbpedia.org/Downloads2014#h395-1 and run the scripts in the following order:
+
+To recreate our experiment please download the English and Dutch types and properties through the following links, extract the files from the bz2 compression and save them in a directory with path ./data: 
+
+- http://data.dws.informatik.uni-mannheim.de/dbpedia/2014/en/instance_types_en.nt.bz2
+- http://data.dws.informatik.uni-mannheim.de/dbpedia/2014/nl/instance_types_en_uris_nl.nt.bz2
+- http://data.dws.informatik.uni-mannheim.de/dbpedia/2014/en/mappingbased_properties_en.nt.bz2
+- http://data.dws.informatik.uni-mannheim.de/dbpedia/2014/nl/mappingbased_properties_en_uris_nl.nt.bz2
+
+
+After downloading the data run the scripts in the following order:
 
 - preprocess_types.py 
 - properties.py 
