@@ -11,7 +11,12 @@ def main(argv):
     else:
         print("Category not given")
         exit()
-    
+    if not os.path.isdir("output_triples"):
+        try:
+            os.mkdir("output_triples")
+        except OSError:
+            print("Creation of the directory output_triples failed, please try again!")
+            exit()
     with open("new_triples/new_property_nl_%s.json" %cat, 'r') as js:
         to_translate = json.load(js)
     with open("new_triples/new_property_nl_%s_old.json" % cat, 'r') as js:

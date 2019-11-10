@@ -9,6 +9,13 @@ def main(argv):
     else:
         print("Category not given")
         exit()
+    
+    if not os.path.isdir("new_triples"):
+        try:
+            os.mkdir("new_triples")
+        except OSError:
+            print("Creation of the directory new_triples failed, please try again!")
+            exit()
 
     with open('data/%s_en.nt' %cat,'r') as g:
         g_dict = defaultdict(list)
